@@ -12,7 +12,24 @@ header {
 header h1, header h2 {
   text-align: center;
   font-size: 25px;
-  color: black;
+  color: rgb(132, 156, 224);
+}
+header h1.h1 span.nameholder {
+  text-transform: capitalize;
+  color: blueviolet;
+}
+header p.nameinitholder {
+  height: 30px;
+  position: relative;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgba(132, 212, 224, 0.442);
+  padding: 10px 5px 20px 10px;
+  margin-left: 45%;
+}
+header p.nameinitholder h1.username {
+  position: absolute;
+  top: 0;
 }
 
 main .form-section {

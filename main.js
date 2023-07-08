@@ -11,9 +11,10 @@ console.log(btwnRandomiser(6, 10));
  let email = document.querySelector('input[type=email]');
  let password = document.querySelector('input[type=password]');
 let form = document.querySelector('#theform');
-let Header = document.querySelector(".h11");
+let Header1 = document.querySelector(".h1");
+let Header2 = document.querySelector(".h11");
 let username = document.querySelector('h1.username');   
-
+let nameHolder = document.querySelector('h1 span.nameholder');
 function randomiser(p) {
     var c = Math.floor(Math.random() * (p));
     return c;
@@ -43,12 +44,13 @@ function regex(word){
     // const reg = new RegExp('/^\<{1,}(script|SCRIPT)\>*$/g');
     const response = normal.test(word.value);
     if(response == true){
-        Header.textContent = ' Sorry!!!  your name contains malicious code.';
+        Header1.textContent = ' Sorry!!!  your name contains malicious code.';
         console.log(response);
         return
     }else{
-        Header.textContent =  `congratulations ${word.value} your name passed the test`;
-        
+        Header1.style.display =  `block`;
+        nameHolder.textContent = ` ${word.value}`;
+        username.style.display = `block`;
         username.textContent = nameinitial(word.value);
     }
         form.reset();
