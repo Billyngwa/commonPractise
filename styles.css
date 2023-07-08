@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin-top: 30px;
+  width: 80%;
+  margin-left: 10%;
+}
+header h1, header h2 {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+main .form-section {
+  padding-top: 60px;
+  width: 80%;
+  margin-left: 10%;
+}
+main .form-section form {
+  width: 60%;
+  margin-left: 20%;
+  padding: 40px;
+  background-color: rgba(132, 212, 224, 0.442);
+}
+main .form-section form p.name {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+main .form-section form p.name input {
+  width: 60%;
+  margin-left: 20%;
+  outline: none;
+  padding: 10px;
+}
+main .form-section form p.name input:focus {
+  border: 2px solid rgba(76, 76, 182, 0.561);
+}
+
+p {
+  display: block;
+  color: white;
+}
+
+p.bgi {
+  background-image: url("./assets/images/moghamo.png");
+}/*# sourceMappingURL=styles.css.map */
